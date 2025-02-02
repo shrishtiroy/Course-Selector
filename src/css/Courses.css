@@ -1,0 +1,124 @@
+.course-homepage {
+  padding: 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search-form {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+  
+.search-input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  border: solid;
+}
+  
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #666;
+}
+  
+.search-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #b39dfb;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+  border: solid;
+  border-color:#ffffff;
+}
+
+.search-button:hover {
+  background-color: #b39dfb82;
+}
+
+@media (max-width: 639px) {
+  .home {
+    padding: 1rem 0;
+  }
+
+  .search-form {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.course-count{
+  background-color: #f89cff93; 
+  color: white;
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  width: 12%;
+  text-align:center;
+  border: solid;
+  bottom: 0;
+  position: fixed;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.course-count.sticky{
+  position: fixed;
+  bottom: 0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.course-titlepage{
+  text-align: center;
+  background-color: #d79bfe76;
+  border-radius: 9px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.course-titlepage h2{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d8c4f8; /* Light pastel purple */
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.course-titlepage h3{
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.course-titlepage{
+  animation: fadeIn 1s ease-in-out;
+}
